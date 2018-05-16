@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica;
+}
+
+h2 {
+  color: #31698a;
+}
+
+h3 {
+  margin: 5px;
+  color: navy;
+}
+
+h4 {
+  margin: 5px;
+  color: grey;
+}
+
+select {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.details, img {
+  display: inline-block;
+}
+
+.details {
+  max-width: 70%;
+  vertical-align: top;
+}
+
+.audio-control {
+  opacity: 0.5;
+  margin-right: 10px;
+  width: 60px;
+}
+
+.playing {
+  opacity: 0.8
+}

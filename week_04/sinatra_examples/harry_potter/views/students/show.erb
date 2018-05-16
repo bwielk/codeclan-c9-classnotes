@@ -1,0 +1,15 @@
+
+<h1>Student Info</h1>
+
+First Name: <%= @student.first_name %><br>
+Surname: <%= @student.second_name %><br>
+House: <%= @student.house().name %><br>
+Age: <%= @student.age %><br>
+<br>
+<img id="student_image" src="<%= @student.image_url %>"> <br><br>
+<a href="/students/<%= @student.id %>/edit" class="glow">Edit</a><br>
+<form action="/students/<%= @student.id %>/delete" method="post" >
+<input type="submit" value="Delete">
+</form>
+<br>
+<a href="/students">Back to All Students</a>

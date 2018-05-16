@@ -1,0 +1,22 @@
+{
+  "name": "starwars",
+  "version": "1.0.0",
+  "description": "Server for the star wars app",
+  "main": "server.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n/a.git"
+  },
+  "author": "Matthew Healy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n/a/issues"
+  },
+  "homepage": "https://github.com/n/a#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

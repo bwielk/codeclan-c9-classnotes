@@ -1,0 +1,16 @@
+
+
+<h1 class="<%= @house.name %>"><%= @house.name %></h1>
+
+<div id="student_info">
+  <% for student in @students %>
+  <p class="flex-student">First Name: <%= student.first_name %><br>
+  Surname: <%= student.second_name %><br>
+  House: <%= student.house().name %><br>
+  Age: <%= student.age %>
+  <img id="student_image"; src="<%= student.image_url %>">
+  </p> 
+  <% end %>
+</div>
+
+ 

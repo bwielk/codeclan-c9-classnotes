@@ -1,0 +1,42 @@
+<h1>Edit Student</h1>
+
+<form action="/students/<%= @student.id%>" method="post">
+  <p>
+    <label>
+      First name:
+    </label>
+    <input type="text" name="first_name" value = "<%= @student.first_name %>"/>
+  </p>
+  <p>
+    <label>
+      Last name:
+    </label>
+    <input type="text" name="second_name" value="<%= @student.second_name %>"/>
+  </p>
+  <p>
+    <label>
+      House:
+    </label>
+    <select name ="house_id">
+    <% for house in @houses %>
+      <option value="<%= house.id %>" <% if @student.house_id.to_i == house.id.to_i %> selected <% end %>><%= house.name %></option>
+    <% end %>
+    </select>
+  </p>
+  <p>  
+    <label>
+      Age:
+    </label>
+    <input type="number" name="age" value="<%= @student.age %>"/>
+    </p>
+    <p>
+    <label>
+      Image URL:
+    </label>
+    <input type="text" name="image_url" value="<%= @student.image_url %>"/>
+    </p>
+    <input type="submit" value="Update" />
+  </p>
+</form>
+
+

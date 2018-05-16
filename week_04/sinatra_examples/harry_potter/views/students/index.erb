@@ -1,0 +1,19 @@
+
+
+<h1>Students</h1>
+
+<a href="/students/new">Add New Student</a>
+<br><br>
+
+<div id="student_info">
+<% for student in @students %>
+<p class="flex-student"><a href="/students/<%= student.id %>" text-align="left"><%= student.first_name %> <%= student.second_name %></a><br>
+House: <%= student.house().name %><br>
+Age: <%= student.age %><br>
+<img id="student_image" src="<%= student.image_url %>">
+</p>
+<% end %>
+
+</div>
+
+

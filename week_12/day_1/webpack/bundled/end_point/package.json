@@ -1,0 +1,18 @@
+{
+  "name": "review_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha client/src/models/specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "webpack": "1.12.15",
+    "mocha": "^3.0.2"
+  }
+}

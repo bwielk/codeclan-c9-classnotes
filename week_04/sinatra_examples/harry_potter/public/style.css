@@ -1,0 +1,80 @@
+
+body {
+  text-align: center;
+  font-family: "Courier";
+  color: #444444;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Potter";
+  color: #8b0000;
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: 'Potter';
+  src: url('./ParryHotter.ttf') format('truetype');
+}
+
+#student_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-student {
+  margin: 20px;
+  width: 300px;
+}
+
+#student_image {
+  width: 250px;
+}
+
+input[type="submit"] {
+  font-family: "Courier New";
+  font-size: 20px;
+}
+
+a {
+  font-family: "Courier New";
+  font-size: 30px;
+  color: navy;
+  text-align: center;
+  float: center;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+.Gryffindor, .Slytherin, .Hufflepuff, .Ravenclaw {
+  font-family: "Potter";
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px gray;
+}
+
+.Gryffindor {
+  color: #8b0000;
+}
+
+.Slytherin {
+  color: green;
+}
+
+.Ravenclaw {
+  color: navy;
+}
+
+.Hufflepuff {
+  color: gold;
+}
+
+
+
+
+
+

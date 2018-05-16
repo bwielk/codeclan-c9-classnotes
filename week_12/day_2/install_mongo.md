@@ -1,0 +1,9 @@
+- brew update -> will give error
+- sudo chmod 777 /usr/local
+- sudo mkdir data
+- cd /data
+- sudo mkdir db
+- brew update
+- sudo chmod 777 /data/db
+- brew install mongodb
+- type mongo to confirm

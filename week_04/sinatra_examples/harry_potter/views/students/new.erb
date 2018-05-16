@@ -1,0 +1,42 @@
+<h1>New Student</h1>
+
+<form action="/students" method="post">
+  <p>
+    <label>
+      First name:
+    </label>
+    <input type="text" name="first_name"/>
+  </p>
+  <p>
+    <label>
+      Last name:
+    </label>
+    <input type="text" name="second_name"/>
+  </p>
+  <p>
+    <label>
+      House:
+    </label>
+    <select name ="house_id">
+    <% for house in @houses %>
+      <option value="<%= house.id %>"><%= house.name %></option>
+    <% end %>
+    </select>
+  </p>
+  <p>  
+    <label>
+      Age:
+    </label>
+    <input type="number" name="age"/>
+    </p>
+    <p>
+    <label>
+      Image URL:
+    </label>
+    <input type="text" name="image_url"/>
+    </p>
+    <input type="submit" value="Add Student" />
+  </p>
+</form>
+
+
